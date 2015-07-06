@@ -147,7 +147,7 @@ li.current a,ul.nav > li > a:hover{color:#319db5}
 .topnav.topnav-top ul.nav > li > a {height: 78px;line-height: 78px;}
 .topnav ul.nav > li > a {height: 60px;line-height: 60px;-moz-transition: all 250ms ease-in-out; -o-transition: all 250ms ease-in-out;-webkit-transition: all 250ms ease-in-out; transition: all 250ms ease-in-out;}
 .topnav.logo-center ul.nav > li > a {height: 45px;line-height: 45px;}
-.topnav.topnav-top .site-name {height: 72px; width: 200px;}
+.topnav.topnav-top .site-name {height: 72px; width: 300px;}
 .topnav.logo-center .site-name {height: 40px;padding-top: 5px;}
 .topnav.topnav-top.logo-center ul.nav > li > a {height: 45px;line-height: 45px;}
 .topnav .site-name {height: 60px;-moz-transition: all 250ms ease-in-out; -o-transition: all 250ms ease-in-out;-webkit-transition: all 250ms ease-in-out; transition: all 250ms ease-in-out; width: 200px;}
@@ -177,7 +177,7 @@ li.current a,ul.nav > li > a:hover{color:#319db5}
 .topnav.topnav-top .navbar-toggle {margin-top: 20px;}
 .topnav .navbar-toggle .icon-bar{background:#fff}
 .topnav.bg-white .navbar-toggle .icon-bar, .topnav.bg-gray-light .navbar-toggle .icon-bar{background:#121212}
-.topnav .navbar-brand {background: url(../images/logo-white.png) no-repeat center;}
+.topnav .navbar-brand {background: url(../images/logo-white.png) no-repeat center; width: 300px;}
 .topnav.transparent.color-dark .navbar-brand {background: url(../images/logo-dark.png) no-repeat center;}
 .navbar-nav .dropdown-toggle:after{position:absolute;display:block;right:0;top:0;margin-top:0;font-family:'FontAwesome';font-size:10px;content:"\f107";text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 .navbar-nav .dropdown-menu .dropdown-toggle:after{position:absolute;display:block;right:9px;top:50%;margin-top:-8px;font-family:'FontAwesome';font-size:10px;content:"\f105";text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
