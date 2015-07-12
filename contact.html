@@ -105,6 +105,8 @@
           <h3 class="section-title">Envianos tus consultas</h3>
         </div>
         <div class="col-md-6">
+        <div id="error" style="color:red;">No se pudo enviar, intentá nuevamente</div>
+        <div id="success" style="color:green;">Se envió correctamente tu consulta, ¡Gracias!</div>
           <div class="confirmation">
             <p><span class="fa fa-check"></span></p>
           </div>
@@ -248,21 +250,21 @@
                       required: true
                   },
                   answer: {
-                      required: true,
-                      answercheck: true
+                      required: false,
+                      answercheck: false
                   }
               },
               messages: {
                   lastname: {
-                      required: "come on, you have a name don't you?",
-                      minlength: "your name must consist of at least 2 characters"
+                      required: "Ingresá tu nombre",
+                      minlength: "Nombre demasiado corto"
                   },
                   email: {
-                      required: "please enter your email"
+                      required: "Ingresá tu email",
                   },
                   message: {
-                      required: "um...yea, you have to write something to send this form.",
-                      minlength: "thats all? really?"
+                      required: "Ingresá algún mensaje",
+                      minlength: "Mensaje demasiado corto"
                   },
                   answer: {
                       required: "sorry, wrong answer!"
