@@ -2,7 +2,7 @@ $(window).ready(function() {
     'use strict';
     /* Google Maps */
     var contact_map;
-    var ny = new google.maps.LatLng(40.7142700, -74.0059700);
+    var ny = new google.maps.LatLng(-34.4540498,-58.8625252);
     var neighborhoods = [
       new google.maps.LatLng(40.7232700, -73.8059700),
       new google.maps.LatLng(40.7423500, -74.0656600),
@@ -186,7 +186,7 @@ $(window).ready(function() {
     function fullMap() {
         var myOptions = {
             zoom: 4,
-            center: new google.maps.LatLng(25.7738889, -80.1938889),
+            center: new google.maps.LatLng(-34.4540498,-58.8625252),
             navigationControlOptions: {
                 style: google.maps.NavigationControlStyle.NORMAL,
                 position: google.maps.ControlPosition.RIGHT_TOP
