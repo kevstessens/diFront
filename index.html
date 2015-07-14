@@ -28,6 +28,25 @@
     </div>
     <!-- END PRELOADER -->
 
+<style type="text/css">
+    @media only screen and (max-width: 800px) {
+        #welcome-box { display: none; }
+        #welcome-box-resp { display: block; }
+        .height-full {
+           max-height: 90px;
+           min-height: 300px;
+        }
+        .image-resp{ height: 50px !important;}
+        #testimonials-pager {display: none;}
+
+
+    }
+    @media only screen and (min-width: 800px) {
+        #welcome-box-resp { display: none; }
+        .image-resp{ height: 70px !important;}
+    }
+</style>
+
     <!--  Begin Topbar simple -->
     <div class="topnav fixed-topnav transparent">
       <form action="#" class="form-search" method="get" role="form">
@@ -53,7 +72,7 @@
               <span class="icon-bar"></span>
               </button>
               <!-- Site Name -->
-          <a class="site-name navbar-brand" href="index.html" style="width: 300px;"></a>  
+          <a class="site-name navbar-brand" href="index.html" style="width: 220px;"></a>  
           </div>
             <!-- Main Navigation menu Starts -->
             <div class="navbar-collapse collapse">
@@ -101,9 +120,9 @@
     <!--  End Topbar simple --> 
 
     <!-- Begin Header Video Full Height -->
-<header class="center height-full" data-img="bg/JW.jpg" id="large-header" style="background-image: url(file:///Users/KeevStessens/Desktop/multipages/images/bg/JW.jpg);background-size: 100%;">
+<header class="center height-full" data-img="bg/JW.jpg" id="large-header" style="background-image: url(file:///Users/KeevStessens/Desktop/multipages/images/bg/JW.jpg); background-size: 100%;">
       
-      <div class="container top-element">
+      <div class="container top-element" id="welcome-box">
         <div class="row top-text fade-text">
           <img src="images/logo_full.png" style="background-color: rgba(255,255,255,0.6); border-radius: 20%; padding: 6%; width:50%;">
           <h1 class="well-come">Sumate a emprender innovando</h1>
@@ -111,7 +130,12 @@
 <a href="https://eventioz.com.ar/organizers/centro-de-entrepreneurship-iae-e4e-universidad-aus/events" class="btn btn-primary btn-rounded hover-effect m-b-0">Inscribite ahora</a>          </div>
         </div>
       </div>
-      <div class="scroll-down next-section"><span></span></div>
+
+       <div class="container top-element" id="welcome-box-resp" >
+        <div class="row top-text fade-text">
+          <h3 class="well-come" style="margin-top:60px;">Sumate a emprender innovando</h3>
+        </div>
+      </div>
     </header>
     <!-- End Header Video Full Height -->
 
@@ -129,16 +153,16 @@
           <figure>
             <div class="owl-carousel icon-carousel" style= "width:100%;" data-plugin-options='{"items": 4, "singleItem": false}'>
               <div class="item">
-                <img src="images/logo/iae.png" alt="IAE Bussines Scholl" style="height: 25%;">
+                <img src="images/logo/iae.png" alt="IAE Bussines Scholl" class="image-resp">
               </div>
               <div class="item">
-                <img src="images/logo/e4e.png" alt="Entrepreneurs for entrepreneurs" style="height: 25%;">
+                <img src="images/logo/e4e.png" alt="Entrepreneurs for entrepreneurs" class="image-resp">
               </div>
               <div class="item">
-                <img src="images/logo/austral.png" alt="Universidad austral" style="height: 25%;">
+                <img src="images/logo/austral.png" alt="Universidad austral" class="image-resp">
               </div>
               <div class="item">
-                <img src="images/logo/wef.png" alt="World entrepreneurship forum" style="height: 25%;">
+                <img src="images/logo/wef.png" alt="World entrepreneurship forum" class="image-resp">
               </div>
             </div>
           </figure>
@@ -146,7 +170,7 @@
       </div>
     </section>
 
-    <section class="section-content clearfix p-t-30 bg-gray">
+<!--     <section class="section-content clearfix p-t-30 bg-gray">
       <div class="container">
         <div class="row">
           <div class="center m-b-30">
@@ -189,7 +213,8 @@
           </figure>
         </div>
       </div>
-    </section>
+    </section> -->
+    
     <!--End  Logo List -->
 
     <!-- Begin Call to Action Contact -->
@@ -386,9 +411,7 @@
               <!-- Single Testimonial Starts -->
               <div class="testimonial">
                 <p class="comment">
-                  "Consectetur adipiscing elit. Nullam eu sem ante. Nullam quis risus eu 
-                  purus commodo dignissim. Donec iaculis ac ex vel posuere. Sed posuere, elit vitae mattis condimentum, 
-                  quam urna fringilla magna"
+                  "Participé dos veces de este evento, y realmente mejora cada año...no sólo me ayudó a identificar herramientas clave para mi emprendimiento, sino que me acercó a personas que me ayudaron a hacerlo mejorar drásticamente"
                 </p>
                 <h5 class="happy-client">Juan Ignacio Gesino</h5>
                 <span class="client-info">Fundador de Educatea (educatea.com.ar)</span>
@@ -409,7 +432,7 @@
           </div>
         </div>
         <div class="row center">
-          <iframe width="50%" height="315" src="https://www.youtube.com/embed/4WoPPu11tMg" frameborder="0" allowfullscreen></iframe>
+          <iframe width="60%" height="400" src="https://www.youtube.com/embed/4WoPPu11tMg" frameborder="0" allowfullscreen></iframe>
 <div class="col-md-12 center" data-animation="fadeInLeft" data-animation-delay="400">
               <p class="section-title m-b-30"><b>
                               Leo Martino nos cuenta su paso por JWEF 2014 
@@ -523,7 +546,13 @@
       </div>
       <div class="col-md-12 center" data-animation="fadeInLeft" data-animation-delay="400">
               <p class="section-title m-b-60" style="margin-top:20px;"><b>
-               El JWEF es una iniciativa derivada del World Entrepreneurship Forum que se realiza en más de 16 países del mundo. Tiene como misión promover y acelerar la actividad emprendedora joven a nivel global como forma contribuir al desarrollo y darle forma al mundo de 2050.</b>
+
+              El <a href="http://junior.world-entrepreneurship-forum.com/" target="_blank">Junior World Entrepreneurship Forum</a> es una iniciativa que se desprende del <a href="http://www.world-entrepreneurship-forum.com/" target="_blank">World Entrepreneurship Forum</a><br/><br/>
+
+Es un think-tank global: Un ámbito de reflexión y debate para los emprendedores de los ámbitos; económico, social, político y académico. Promueve el espíritu emprendedor y la justicia social a nivel global. <br/><br/>
+
+Hoy son ya 16 paises que forman parte del Junior World Entrepreneurship Forum: Argentina, Bahrain, Chile, China, Ecuador, Francia, Hong Kong, India, Indonesia, Iran, Malaysia, Oman; Singapur, Sri Lanka, Tanzania, Turkey
+</b>
               </p>
           </div>
     </section>
