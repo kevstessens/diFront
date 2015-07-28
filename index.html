@@ -37,13 +37,29 @@
            min-height: 300px;
         }
         .image-resp{ height: 50px !important;}
+        .image-resp-big{ height: 50px !important;}
+        .image-resp-2{ height: 50px !important; }
+        .image-resp-big-2{ height: 50px !important; }
         #testimonials-pager {display: none;}
 
 
     }
-    @media only screen and (min-width: 800px) {
+    @media only screen and (min-width: 800px) and (max-width: 1200px) {
+        #welcome-box-resp { display: none; }
+        .image-resp{ height: 40px !important;}
+        .image-resp-big{ height: 70px !important;}
+        .image-resp-2{ height: 40px !important; margin-left: 50% !important; }
+        .image-resp-big-2{ height: 70px !important; margin-left: 30% !important; }
+        .owl-item{width: 250px !important;}
+        .figure{width: 70% !important; margin: auto !important;}
+    }
+
+    @media only screen and (min-width: 1200px) {
         #welcome-box-resp { display: none; }
         .image-resp{ height: 70px !important;}
+        .image-resp-big{ height: 110px !important;}
+        .image-resp-2{ height: 70px !important; margin-left: 50% !important;}
+        .image-resp-big-2{ height: 110px !important;margin-left: 25% !important;}
     }
 </style>
 
@@ -150,26 +166,36 @@
             <h3 class="section-title">ORGANIZAN</h3>
             <p class="p-b-20 f-16"></p>
           </div>
-          <figure>
-            <div class="owl-carousel icon-carousel" style= "width:100%;" data-plugin-options='{"items": 4, "singleItem": false}'>
+          <figure class="figure">
+            <div class="owl-carousel icon-carousel" style= "width:100%;" data-plugin-options='{"items": 2, "singleItem": false}'>
               <div class="item">
-                <a href="https://www.iae.edu.ar/es/ConocimientoEImpacto/Centros/Entrepreneurship/Paginas/default.aspx" target="_blank"><img src="images/logo/iae.png" alt="IAE Bussines Scholl" class="image-resp"></a>
+                <a href="https://www.iae.edu.ar/es/ConocimientoEImpacto/Centros/Entrepreneurship/Paginas/default.aspx" target="_blank"><img src="images/logo/iae.png" alt="IAE Bussines Scholl" class="image-resp-big"></a>
               </div>
               <div class="item">
               <a href="http://www.world-entrepreneurship-forum.com/" target="_blank">
-                <img src="images/logo/wef.png" alt="World entrepreneurship forum" class="image-resp"></a>
+                <img src="images/logo/wef.png" alt="World entrepreneurship forum" class="image-resp-big-2"></a>
+              </div>
+             
+            </div>
+          </figure>
+        </div>
+
+        <div class="row">
+          <figure class="figure">
+            <div class="owl-carousel icon-carousel" data-plugin-options='{"items": 2, "singleItem": false}'>
+             <div class="item">
+              <a href="http://e4e.la" target="_blank">
+                <img src="images/logo/e4e.png" alt="Entrepreneurs for entrepreneurs" class="image-resp-2"></a>
               </div>
               <div class="item">
               <a href="http://www.austral.edu.ar" target="_blank">
                 <img src="images/logo/austral.png" alt="Universidad austral" class="image-resp"></a>
               </div>
-              <div class="item">
-              <a href="http://e4e.la" target="_blank">
-                <img src="images/logo/e4e.png" alt="Entrepreneurs for entrepreneurs" class="image-resp"></a>
-              </div>
+              
             </div>
           </figure>
         </div>
+
       </div>
     </section>
 
@@ -448,14 +474,14 @@
     <!-- End Testimonials -->
 
     <!-- Begin Services 2 columns 2 rows -->
-    <section class="section-services services-wrap bg-dark">
+    <section class="section-services services-wrap bg-dark" style="background-color: #169BCD;">
       <div class="container services p-b-30">
         <div class="row">
           <div class="col-md-12 center">
             <h3 class="section-title m-b-60">EL PROGRAMA</h3>
           </div>
           <div class="col-md-12 col-sm-12 service animated" data-animation="fadeInLeft" data-animation-delay="400">
-              <p class="service-description justify">
+              <p class="service-description justify" style="color:black;">
                JWEF+INNOVACTION es el programa para jóvenes emprendedores más importante de Argentina y la región. Es una experiencia emprendedora única de más de 50 charlas, talleres, cursos y eventos de networking. 
               </p>
           </div>
@@ -464,8 +490,8 @@
           <div class="col-md-12 col-sm-12 service animated" data-animation="fadeInLeft" data-animation-delay="400">
             <span class="service-icon center"><img src="images/jwef.png"></span>
             <div class="service-desc">
-              <h4 class="service-title">JWEF Argentina</h4>
-              <p class="service-description justify">
+              <h4 class="service-title" style="font-weight:bold;">JWEF Argentina</h4>
+              <p class="service-description justify" style="color:black;">
                 Auditorio Buenos Aires, 2 de septiembre<br />
                 IAE Business School, 4 y 5 de septiembre<br /><br />
 
@@ -479,8 +505,8 @@
           <div class="col-md-12 col-sm-12 service animated" data-animation="fadeInLeft" data-animation-delay="400">
             <span class="service-icon center"><img src="images/innovaction.png"></span>
             <div class="service-desc">
-              <h4 class="service-title">+INNOVACTION</h4>
-              <p class="service-description justify">
+              <h4 class="service-title" style="font-weight:bold;">+INNOVACTION</h4>
+              <p class="service-description justify" style="color:black;">
                 La diferencia entre un emprendedor y un entusiasta  es su capacidad de implementación. En +INNOVACTION vas a aprender a implementar. ¿Cómo? Completando con tu equipo esta experiencia, compuesta por un curso online, mentores asignados, actividades presenciales y mucho más. Tiene lugar durante septiembre y octubre.
               </p>
             </div>
@@ -490,8 +516,8 @@
           <div class="col-md-12 col-sm-12 service animated" data-animation="fadeInLeft" data-animation-delay="400">
             <span class="service-icon center"><img src="images/final.png"></span>
             <div class="service-desc">
-              <h4 class="service-title">LA FINAL</h4>
-              <p class="service-description justify">
+              <h4 class="service-title" style="font-weight:bold;">LA FINAL</h4>
+              <p class="service-description justify" style="color:black;">
                 Los mejores equipos participantes del programa participarán en una final general en Buenos Aires, el 17 de noviembre, a realizarse junto con la final de NAVES, la competencia de startups más prestigiosa de Latinoamérica.
               </p>
             </div>
